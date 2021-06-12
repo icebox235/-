@@ -489,25 +489,25 @@ unsigned char dp_process(unsigned char dpid,const unsigned char value[], unsigne
     
      switch(scene_mode){
        case 0:
-          colorWipe(strip.Color(  0,   0,   0), 50);    // Black/off
+          colorWipe(strip.Color(  0,   0,   0), 50); 
           break;
         case 1:
-          colorWipe(strip.Color(255,   0,   0), 50);    // Red
+          colorWipe(strip.Color(0,114,153), 50);  
           break;
         case 2:
-          colorWipe(strip.Color(  0, 255,   0), 50);    // Green
+          colorWipe(strip.Color(184,72,0), 50); 
           break;
         case 3:
-          colorWipe(strip.Color(  0,   0, 255), 50);    // Blue
+          colorWipe(strip.Color(45,0,202), 50); 
           break;
         case 4:
-          theaterChase(strip.Color(127, 127, 127), 50); // White
+          theaterChase(strip.Color(127, 127, 127), 50);
           break;
         case 5:
-          theaterChase(strip.Color(127,   0,   0), 50); // Red
+          theaterChase(strip.Color(127,   0,   0), 50);
           break;
         case 6:
-          theaterChase(strip.Color(  0,   0, 127), 50); // Blue
+          theaterChase(strip.Color(  0,   0, 127), 50);
           break;
         case 7:
           rainbow(10);
